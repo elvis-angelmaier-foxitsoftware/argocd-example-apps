@@ -8,3 +8,15 @@ spec:
     targetPort: 80
   selector:
     app: guestbook-ui
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: guestbook-backend
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: guestbook-backend

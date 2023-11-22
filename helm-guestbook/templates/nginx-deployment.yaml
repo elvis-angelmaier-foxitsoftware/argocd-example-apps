@@ -16,5 +16,5 @@ spec:
         app: nginx-deployment
     spec:
       containers:
-      - image: nginx:1.24.0
+      - image: "{{ .Values.nginx.image.repository }}:{{ .Values.nginx.image.tag }}"
         name: nginx

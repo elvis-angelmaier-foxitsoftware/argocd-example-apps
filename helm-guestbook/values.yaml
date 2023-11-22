@@ -4,10 +4,18 @@
 
 replicaCount: 2
 
-image:
-  repository: gcr.io/heptio-images/ks-guestbook-demo
-  tag: 0.1
-  pullPolicy: IfNotPresent
+guestbook:
+  image:
+    repository: gcr.io/heptio-images/ks-guestbook-demo
+    tag: 0.1
+    pullPolicy: IfNotPresent
+
+nginx:
+    image:
+    repository: nginx
+    tag: 1.23
+    pullPolicy: IfNotPresent
+
 
 service:
   type: ClusterIP

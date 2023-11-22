@@ -11,7 +11,7 @@ guestbook:
     pullPolicy: IfNotPresent
 
 nginx:
-    image:
+  image:
     repository: nginx
     tag: 1.23
     pullPolicy: IfNotPresent

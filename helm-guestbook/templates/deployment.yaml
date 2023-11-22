@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.guestbook.image.repository }}:{{ .Values.guestbook.image.tag }}"
+          image: "{{ .Values.guestbook.image.name }}:{{ .Values.guestbook.image.tag }}"
           imagePullPolicy: {{ .Values.guestbook.image.pullPolicy }}
           ports:
             - name: http

@@ -6,15 +6,13 @@ replicaCount: 1
 
 guestbook:
   image:
-    name: guestbook
-    repository: gcr.io/heptio-images/ks-guestbook-demo
+    name: gcr.io/heptio-images/ks-guestbook-demo
     tag: 0.1
     pullPolicy: IfNotPresent
 
 nginx:
   image:
     name: nginx
-    repository: nginx
     tag: 1.23
     pullPolicy: IfNotPresent
 

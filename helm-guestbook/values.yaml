@@ -19,6 +19,12 @@ nginx:
     tag: dummmy
     pullPolicy: IfNotPresent
 
+chrome:
+  image:
+    name: nginx
+    #tag: 1.23
+    tag: dummmy
+    pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP

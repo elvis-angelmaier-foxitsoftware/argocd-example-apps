@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: chrome-deployment
+  name: chrome-deployment
+spec:
+  revisionHistoryLimit: 1
+  replicas: 0
+  selector:
+    matchLabels:
+      app: chrome-deployment
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: chrome-deployment
+    spec:
+      containers:
+      - image: "{{ .Values.chrome.image.name }}:{{ .Values.chrome.image.tag }}"
+        name: chrome

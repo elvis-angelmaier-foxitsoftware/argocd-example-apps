@@ -4,7 +4,7 @@ helm:
     value: nginx
     forcestring: true
   - name: nginx.image.tag
-    value: 1.24.0
+    value: "1.24"
     forcestring: true
   - name: guestbook.image.name
     value: elvisfoxit/ks-guestbook-demo
@@ -15,9 +15,12 @@ helm:
   - name: image.name
     value: nginx
     forcestring: true
+  - name: image.tag
+    value: "1.24"
+    forcestring: true
   - name: chrome.image.name
     value: nginx
     forcestring: true
-  - name: image.tag
+  - name: chrome.image.tag
     value: 1.23.4
     forcestring: true

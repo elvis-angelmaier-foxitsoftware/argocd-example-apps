@@ -8,13 +8,15 @@ guestbook:
   image:
     name:  elvisfoxit/ks-guestbook-demo
     #name: gcr.io/heptio-images/ks-guestbook-demo
-    tag: 0.1
+    #tag: 0.1
+    tag: dummy
     pullPolicy: IfNotPresent
 
 nginx:
   image:
     name: nginx
-    tag: 1.23
+    #tag: 1.23
+    tag: dummmy
     pullPolicy: IfNotPresent
 
 

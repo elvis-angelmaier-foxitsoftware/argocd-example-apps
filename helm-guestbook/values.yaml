@@ -9,21 +9,21 @@ guestbook:
     name:  elvisfoxit/ks-guestbook-demo
     #name: gcr.io/heptio-images/ks-guestbook-demo
     #tag: 0.1
-    tag: latest
+    tag: 0.1
     pullPolicy: IfNotPresent
 
 nginx:
   image:
     name: nginx
     #tag: 1.23
-    tag: latest
+    tag: 1.23
     pullPolicy: IfNotPresent
 
 chrome:
   image:
     name: nginx
     #tag: 1.23
-    tag: dummmy
+    tag: 1.23
     pullPolicy: IfNotPresent
 
 service:

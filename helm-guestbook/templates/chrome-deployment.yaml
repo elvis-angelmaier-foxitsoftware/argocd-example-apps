@@ -6,7 +6,7 @@ metadata:
   name: chrome-deployment
 spec:
   revisionHistoryLimit: 1
-  replicas: 1
+  replicas: {{ .Values.chrome.replicaCount }}
   selector:
     matchLabels:
       app: chrome-deployment

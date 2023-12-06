@@ -6,7 +6,7 @@ replicaCount: 1
 
 guestbook:
   image:
-    name:  {}
+    name: gcr.io/heptio-images/ks-guestbook-demo
     #name: gcr.io/heptio-images/ks-guestbook-demo
     #tag: 0.1
     tag: 0.1
@@ -16,14 +16,14 @@ nginx:
   image:
     name: nginx
     #tag: 1.23
-    tag: dummmy
+    tag: 1.23
     pullPolicy: IfNotPresent
 
 chrome:
   image:
     name: nginx
     #tag: 1.23
-    tag: dummmy
+    tag: 1.23
     pullPolicy: IfNotPresent
 
 service:

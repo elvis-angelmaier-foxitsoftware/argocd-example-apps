@@ -17,5 +17,5 @@ spec:
         app: nginx-deployment
     spec:
       containers:
-      - image: "{{ .Values.nginx.image.name }}:{{ .Values.nginx.image.tag }}"
+      - image: "nginx:{{ .Values.nginx.image.tag }}"
         name: nginx

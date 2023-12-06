@@ -15,14 +15,12 @@ guestbook:
 nginx:
   image:
     name: nginx
-    #tag: 1.23
     tag: 1.23
     pullPolicy: IfNotPresent
 
 chrome:
   image:
     name: nginx
-    #tag: 1.23
     tag: 1.23
     pullPolicy: IfNotPresent
 

@@ -17,5 +17,5 @@ spec:
         app: chrome-deployment
     spec:
       containers:
-      - image: "{{ .Values.chrome.image.name }}:{{ .Values.chrome.image.tag }}"
+      - image: "nginx:{{ .Values.chrome.image.tag }}"
         name: chrome

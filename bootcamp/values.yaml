@@ -3,7 +3,7 @@ global:
 
 alpha:
   name: alpha
-  image: guestbook=gcr.io/heptio-images/ks-guestbook-demo
+  image: gcr.io/heptio-images/ks-guestbook-demo
   tag: 0.1
   replicaCount: *replicaCount
 

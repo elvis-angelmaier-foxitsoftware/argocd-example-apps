@@ -6,3 +6,9 @@ helm:
   - name: alpha.tag
     value: "0.2"
     forcestring: true
+  - name: beta.image
+    value: nginx
+    forcestring: true
+  - name: beta.tag
+    value: 1.20.0
+    forcestring: true

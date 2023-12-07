@@ -3,8 +3,8 @@ global:
 
 alpha:
   name: alpha
-  image: nginx
-  tag: 1.24
+  image: guestbook=gcr.io/heptio-images/ks-guestbook-demo
+  tag: 0.1
   replicaCount: *replicaCount
 
 beta:

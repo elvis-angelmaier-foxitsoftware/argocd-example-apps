@@ -1,44 +1,5 @@
-
-global:
-  image: &global_image "gcr.io/google-samples/kubernetes-bootcamp"
-  tag: &global_tag "v1"
-  replicaCount: &replicaCount 1
-
-
-
-
-apps:
-  - name: bootcamp-1
-    image: *global_image
-    tag: *global_tag
-    replicaCount: *replicaCount
-
-  - name: bootcamp-2
-    image: *global_image
-    tag: *global_tag
-    replicaCount: *replicaCount
-
-  - name: bootcamp-3
-    image: *global_image
-    tag: *global_tag
-    replicaCount: *replicaCount
-
-  - name: bootcamp-4
-    image: *global_image
-    tag: *global_tag
-    replicaCount: *replicaCount
-
-  - name: bootcamp-5
-    image: *global_image
-    tag: *global_tag
-    replicaCount: *replicaCount
-
-  - name: bootcamp-6
-    image: *global_image
-    tag: *global_tag
-    replicaCount: *replicaCount
-
-  - name: bootcamp-7
-    image: *global_image
-    tag: *global_tag
-    replicaCount: *replicaCount
+alpha:
+  name: alpha
+  image: gcr.io/google-samples/kubernetes-bootcamp
+  tag: v1
+  replicaCount: 1

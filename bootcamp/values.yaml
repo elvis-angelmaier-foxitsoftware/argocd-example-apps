@@ -1,0 +1,11 @@
+apps:
+  - name: bootcamp-1
+    image: gcr.io/google-samples/kubernetes-bootcamp
+    tag: v1
+
+
+
+
+replicaCount: 1
+
+

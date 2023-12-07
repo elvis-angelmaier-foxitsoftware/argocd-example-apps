@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,5 +15,131 @@ spec:
       containers:
         - name: {{ .Values.alpha.name }}
           image: {{ .Values.alpha.image }}:{{ .Values.alpha.tag }}
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beta
+spec:
+  replicas: {{ .Values.beta.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.beta.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.beta.name }}
+    spec:
+      containers:
+        - name: {{ .Values.beta.name }}
+          image: {{ .Values.beta.image }}:{{ .Values.beta.tag }}
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gamma
+spec:
+  replicas: {{ .Values.gamma.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.gamma.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.gamma.name }}
+    spec:
+      containers:
+        - name: {{ .Values.gamma.name }}
+          image: {{ .Values.gamma.image }}:{{ .Values.gamma.tag }}
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: delta
+spec:
+  replicas: {{ .Values.delta.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.delta.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.delta.name }}
+    spec:
+      containers:
+        - name: {{ .Values.delta.name }}
+          image: {{ .Values.delta.image }}:{{ .Values.delta.tag }}
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: epsilon
+spec:
+  replicas: {{ .Values.epsilon.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.epsilon.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.epsilon.name }}
+    spec:
+      containers:
+        - name: {{ .Values.epsilon.name }}
+          image: {{ .Values.epsilon.image }}:{{ .Values.epsilon.tag }}
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zeta
+spec:
+  replicas: {{ .Values.zeta.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.zeta.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.zeta.name }}
+    spec:
+      containers:
+        - name: {{ .Values.zeta.name }}
+          image: {{ .Values.zeta.image }}:{{ .Values.zeta.tag }}
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eta
+spec:
+  replicas: {{ .Values.eta.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.eta.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.eta.name }}
+    spec:
+      containers:
+        - name: {{ .Values.eta.name }}
+          image: {{ .Values.eta.image }}:{{ .Values.eta.tag }}
           ports:
             - containerPort: 80

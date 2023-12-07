@@ -3,43 +3,43 @@ global:
 
 alpha:
   name: alpha
-  image: gcr.io/google-samples/kubernetes-bootcamp
-  tag: v1
+  image: nginx
+  tag: 1.24
   replicaCount: *replicaCount
 
 beta:
   name: beta
-  image: gcr.io/google-samples/kubernetes-bootcamp
-  tag: v1
+  image: nginx
+  tag: 1.24
   replicaCount: *replicaCount
 
 gamma:
   name: gamma
-  image: gcr.io/google-samples/kubernetes-bootcamp
-  tag: v1
+  image: nginx
+  tag: 1.24
   replicaCount: *replicaCount
 
 delta:
   name: delta
-  image: gcr.io/google-samples/kubernetes-bootcamp
-  tag: v1
+  image: nginx
+  tag: 1.24
   replicaCount: *replicaCount
 
 epsilon:
   name: epsilon
-  image: gcr.io/google-samples/kubernetes-bootcamp
-  tag: v1
+  image: nginx
+  tag: 1.24
   replicaCount: *replicaCount
 
 zeta:
   name: zeta
-  image: gcr.io/google-samples/kubernetes-bootcamp
-  tag: v1
+  image: nginx
+  tag: 1.24
   replicaCount: *replicaCount
 
 eta:
   name: eta
-  image: gcr.io/google-samples/kubernetes-bootcamp
-  tag: v1
+  image: nginx
+  tag: 1.24
   replicaCount: *replicaCount
 

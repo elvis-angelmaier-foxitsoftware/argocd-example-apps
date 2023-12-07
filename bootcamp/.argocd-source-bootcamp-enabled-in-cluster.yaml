@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: alpha.image
+    value: nginx
+    forcestring: true
+  - name: alpha.tag
+    value: "1.20"
+    forcestring: true

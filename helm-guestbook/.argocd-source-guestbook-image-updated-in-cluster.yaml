@@ -10,7 +10,7 @@ helm:
     value: nginx
     forcestring: true
   - name: nginx.image.tag
-    value: 1.25.3
+    value: 1.19.10
     forcestring: true
   - name: chrome.image.name
     value: nginx

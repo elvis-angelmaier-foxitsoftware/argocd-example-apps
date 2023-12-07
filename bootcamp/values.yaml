@@ -1,42 +1,45 @@
+global:
+  replicaCount: &replicaCount 1
+
 alpha:
   name: alpha
   image: gcr.io/google-samples/kubernetes-bootcamp
   tag: v1
-  replicaCount: 1
+  replicaCount: *replicaCount
 
 beta:
   name: beta
   image: gcr.io/google-samples/kubernetes-bootcamp
   tag: v1
-  replicaCount: 1
+  replicaCount: *replicaCount
 
 gamma:
   name: gamma
   image: gcr.io/google-samples/kubernetes-bootcamp
   tag: v1
-  replicaCount: 1
+  replicaCount: *replicaCount
 
 delta:
   name: delta
   image: gcr.io/google-samples/kubernetes-bootcamp
   tag: v1
-  replicaCount: 1
+  replicaCount: *replicaCount
 
 epsilon:
   name: epsilon
   image: gcr.io/google-samples/kubernetes-bootcamp
   tag: v1
-  replicaCount: 1
+  replicaCount: *replicaCount
 
 zeta:
   name: zeta
   image: gcr.io/google-samples/kubernetes-bootcamp
   tag: v1
-  replicaCount: 1
+  replicaCount: *replicaCount
 
 eta:
   name: eta
   image: gcr.io/google-samples/kubernetes-bootcamp
   tag: v1
-  replicaCount: 1
+  replicaCount: *replicaCount
 

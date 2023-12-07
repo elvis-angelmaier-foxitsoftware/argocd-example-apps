@@ -16,5 +16,5 @@ helm:
     value: nginx
     forcestring: true
   - name: chrome.image.tag
-    value: 1.24.0
+    value: "1.24"
     forcestring: true

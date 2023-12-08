@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
         - name: {{ .Values.beta.name }}
-          image: {{ .Values.beta.image }}:{{ .Values.beta.tag }}
+          image: {{ .Values.beta.image }} #:{{ .Values.beta.tag }}
           ports:
             - containerPort: 80
 

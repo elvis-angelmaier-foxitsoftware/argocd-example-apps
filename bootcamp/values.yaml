@@ -9,8 +9,8 @@ alpha:
 
 beta:
   name: beta
-  image: nginx
-  #tag: dummy
+  image: bguruprasad/ngnix-print-hostname
+  #tag: {}
   replicaCount: *replicaCount
 
 gamma:

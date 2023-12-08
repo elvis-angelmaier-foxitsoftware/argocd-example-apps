@@ -6,9 +6,3 @@ helm:
   - name: alpha.tag
     value: "0.2"
     forcestring: true
-  - name: beta.image
-    value: bguruprasad/ngnix-print-hostname
-    forcestring: true
-  - name: beta.tag
-    value: 0.0.1
-    forcestring: true

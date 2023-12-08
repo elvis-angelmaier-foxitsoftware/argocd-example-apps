@@ -10,5 +10,5 @@ helm:
     value: bguruprasad/ngnix-print-hostname
     forcestring: true
   - name: beta.tag
-    value: 0.8-prod
+    value: 0.8.0-prod
     forcestring: true

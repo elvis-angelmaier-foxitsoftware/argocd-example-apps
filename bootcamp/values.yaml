@@ -10,7 +10,7 @@ alpha:
 beta:
   name: beta
   image: nginx
-  tag: 1.24
+  tag: dummy
   replicaCount: *replicaCount
 
 gamma:

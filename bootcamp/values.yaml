@@ -10,7 +10,7 @@ alpha:
 beta:
   name: beta
   image: bguruprasad/ngnix-print-hostname
-  #tag: {}
+  tag: 0.0.1
   replicaCount: *replicaCount
 
 gamma:
